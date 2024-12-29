@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer UI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: blue;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 400px;
+    }
+
+    .box {
+      margin: 10px 0;
+      padding: 15px;
+      border: 2px solid blue;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    .btn {
+      margin: 10px 0;
+      padding: 10px 20px;
+      border: 2px solid blue;
+      border-radius: 5px;
+      background-color: black;
+      color: blue;
+      font-size: 18px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .btn:hover {
+      background-color: blue;
+      color: black;
+    }
+
+    .green {
+      color: green;
+    }
+
+    .red {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="timer">Timer: 00:00</div>
+    <div class="box" id="period-number">Period Number</div>
+    <button class="btn" onclick="generateAndCheck()">Generate Result</button>
+    <div class="box" id="result">Number: -</div>
+    <div class="box" id="oddeven">Big/Small: -</div>
+    <div class="box" id="color">Color: -</div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="result.js"></script>
+</body>
+</html>
